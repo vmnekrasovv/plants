@@ -1,2 +1,7 @@
-@import 'burger';
-@import 'header_menu';
+.header {
+
+	@import 'navbar';
+	@import 'menu';
+	@import 'burger';
+	@import 'slider';
+}
