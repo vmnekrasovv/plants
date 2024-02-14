@@ -1,4 +1,4 @@
-/* @mixin font($fname, $fstyle, $fweight, $furl) {
+@mixin font($fname, $fstyle, $fweight, $furl) {
 	@font-face {
 		font-family: $fname;
 		font-style: $fstyle;
@@ -10,4 +10,9 @@
 }
 
 
-@include font('Font', normal, normal, '../fonts/Font/Font.woff2'); */
+@include font('CeraPro', normal, 100, '../fonts/CeraPro/CeraPro-Thin.woff2');
+@include font('CeraPro', normal, 300, '../fonts/CeraPro/CeraPro-Light.woff2');
+@include font('CeraPro', normal, 400, '../fonts/CeraPro/CeraPro-Regular.woff2');
+@include font('CeraPro', normal, 500, '../fonts/CeraPro/CeraPro-Medium.woff2');
+@include font('CeraPro', normal, 700, '../fonts/CeraPro/CeraPro-Bold.woff2');
+@include font('CeraPro', normal, 900, '../fonts/CeraPro/CeraPro-Black.woff2');
