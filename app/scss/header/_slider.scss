@@ -5,6 +5,10 @@
 	margin-bottom: 50px;
 	position: relative;
 
+	@media screen and (max-width: 375px) {
+		height: 400px;
+	}
+
 	.pagination {
 
 		width: 200px;
@@ -61,6 +65,14 @@
 			padding-top: 65px;
 			padding-left: 44px;
 
+			@media screen and (max-width: 768px) {
+				padding-top: 75px;
+				padding-left: 20px;
+			}
+			
+			@media screen and (max-width: 375px) {
+				padding-top: 45px;
+			}
 
 			& > span {
 				color: $color_dark;
@@ -71,9 +83,17 @@
 				display: block;
 				margin-bottom: 10px;
 				padding-left: 3px;
+
+				@media screen and (max-width: 768px) {
+					font-size: 12px;
+				}
+
+				@media screen and (max-width: 576px) {
+					font-size: 9px;
+				}
 			}
 
-			h1, h2 {
+			h1, h2, h1 span, h2 span {
 				font-size: 70px;
 				font-weight: 900;
 				line-height: 70px;
@@ -81,10 +101,42 @@
 				color: $color_dark;
 				text-transform: uppercase;
 
+				@media screen and (max-width: 990px) {
+					font-size: 60px;
+					line-height: 60px;
+					max-width: 90%;
+				}
+
+				@media screen and (max-width: 768px) {
+					font-size: 50px;
+					line-height: 50px;
+					max-width: 90%;
+				}
+
+				@media screen and (max-width: 576px) {
+					font-size: 40px;
+					line-height: 40px;
+					max-width: 94%;
+				}
+
+				@media screen and (max-width: 480px) {
+					font-size: 38px;
+					line-height: 38px;
+				}
+
+				@media screen and (max-width: 375px) {
+					font-size: 30px;
+					line-height: 30px;
+					max-width: 90%;
+				}
+
+
+				@media screen and (min-width: 450px) and (max-width: 576px) {
+					max-width: 75%;
+				}
+
+
 				span {
-					font-size: 70px;
-					font-weight: 900;
-					line-height: 70px;
 					color: $color_green;
 				}
 			}
@@ -96,6 +148,24 @@
 				color: $color_text;
 				margin-bottom: 35px;
 				padding-left: 3px;
+
+				@media screen and (max-width: 990px) {
+					width: 80%;
+				}
+
+				@media screen and (max-width: 768px) {
+					width: 72%;
+				}
+
+				@media screen and (max-width: 576px) {
+					font-size: 12px;
+					line-height: 20px;
+					width: 70%;
+				}
+
+				@media screen and (max-width: 375px) {
+					width: 90%;
+				}
 			}
 		}
 
@@ -111,6 +181,14 @@
 			border-radius: 7px;
 			background-color: $color_green;
 			text-decoration: none;
+		
+			@media screen and (max-width: 576px) {
+				font-size: 14px;
+			}
+
+			@media screen and (max-width: 375px) {
+				font-size: 12px;
+			}
 		}
 
 	} // slide 

@@ -1,4 +1,16 @@
 (function($){
+
+	/*$(window).on('load resize', function(){
+		
+		let wW = this.innerWidth;
+		let toolbar = $('.toolbar'); 
+		let wrapperMenu = $('.wrapper-menu');
+
+		if(wW <= 990){
+			toolbar.appendTo(wrapperMenu);
+		}
+	});*/
+
 	$(document).ready(function(){ 
 
 		/*$('.scroll-down').on('click', function(){
