@@ -1,6 +1,6 @@
 .sidebar {
 	width: 310px;
-	padding: 20px;
+	padding: 20px 20px 0 20px;
 	background-color: #FBFBFB;
 
 	.title {
@@ -8,7 +8,7 @@
 		font-size: 18px;
 		line-height: 16px;
 		color: $color_dark;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 	}
 
 	.categories, .sizes {
@@ -109,6 +109,10 @@
 		}
 
 	} // price
+
+	.sizes {
+		margin-bottom: 35px;
+	}
 
 	.banner {
 		margin-left: -20px;
