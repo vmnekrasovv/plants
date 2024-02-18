@@ -1,0 +1,31 @@
+.s1	{
+	
+	display: flex;
+	gap: 50px;
+
+	@import 's1_sidebar';
+
+
+	.catalog {
+
+		.sort {
+			display: flex;
+			gap: 37px;
+			margin-bottom: 30px;
+
+			font-size: 15px;
+			font-weight: 400;
+			line-height: 16px;
+			color: $color_dark;
+			cursor: pointer;
+
+			span.active {
+				font-weight: bold;
+				color: $color_green;
+				padding-bottom: 5px;
+				border-bottom: 2px solid $color_green;
+			}
+		} // sort
+
+	}
+}
