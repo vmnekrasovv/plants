@@ -1,7 +1,26 @@
 .sidebar {
+
 	width: 310px;
 	padding: 20px 20px 0 20px;
 	background-color: #FBFBFB;
+
+	@media screen and (max-width: 990px) {
+		position: absolute;
+		top: 0;
+		left: -100vw;
+	}
+
+	/* &::after {
+		display: none;
+		content: '';
+		width: 40px;
+		height: 40px;
+		background-color: #333;
+
+		@media screen and (max-width: 990px) {
+			display: block;
+		}
+	} */
 
 	.title {
 		font-weight: bold;
