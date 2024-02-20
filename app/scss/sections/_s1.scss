@@ -8,8 +8,8 @@
 
 
 	.catalog {
-		position: relative;
 
+		position: relative;
 		width: calc(100% - 360px);
 
 		@media screen and (max-width: 990px) {
@@ -50,6 +50,10 @@
 			@media screen and (max-width: 990px) {
 				justify-content: center;
 				gap: 20px;
+			}
+
+			@media screen and (max-width: 375px) {
+				padding: 0 10px;
 			}
 
 			.item {

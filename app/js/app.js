@@ -50,6 +50,13 @@
 
 	    $(".range-result .value").text("$" + $(".range").slider("values", 0) + " - $" + $(".range").slider("values", 1));
 
+		
+
+	    $('.sidebar-label').on('click', function(){
+	    	$(this).parent().toggleClass('sidebar-active');
+	    });
+
+
 		/*$('.scroll-down').on('click', function(){
 			$('html, body').animate({
 				scrollTop: $('.navbar').offset().top
