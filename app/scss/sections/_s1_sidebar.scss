@@ -3,7 +3,7 @@
 	width: 310px;
 	padding: 20px 20px 0 20px;
 	background-color: #FBFBFB;
-	z-index: 2;
+	z-index: 3;
 	transition: .33s;
 
 	
@@ -17,25 +17,6 @@
 
 	@media screen and (max-width: 576px) {
 		width: 100%;
-	}
-
-	&-label {
-		display: none;
-	    width: 100px;
-	    height: 20px;
-	    background-color: #eee;
-	    justify-content: center;
-	    transform: rotate(90deg);
-	    letter-spacing: .3px;
-	    font-size: 16px;
-
-		@media screen and (max-width: 990px) {
-			display: flex;
-		    position: fixed;
-		    top: 76%;
-		    left: -40px;
-		    z-index: 2;
-		}
 	}
 
 	&.sidebar-active {

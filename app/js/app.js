@@ -53,7 +53,18 @@
 		
 
 	    $('.sidebar-label').on('click', function(){
-	    	$(this).parent().toggleClass('sidebar-active');
+	    	$('.sidebar').addClass('sidebar-active');
+	    	$('body').toggleClass('lock');
+	    });
+
+	    $('.sidebar .title').on('click', function(){
+	    	$('body').toggleClass('lock');
+	    	$('.sidebar').removeClass('sidebar-active');
+	    });
+
+	    $('.sidebar .price-button').on('click', function(){
+	    	$('body').toggleClass('lock');
+	    	$('.sidebar').removeClass('sidebar-active');
 	    });
 
 

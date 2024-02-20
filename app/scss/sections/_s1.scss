@@ -4,6 +4,30 @@
 	gap: 50px;
 	margin-bottom: 100px;
 
+
+	.sidebar-label {
+		display: none;
+	    width: 100px;
+	    height: 30px;
+	    background-color: $color_green;
+	    justify-content: center;
+	    align-items: center;
+	    padding-bottom: 4px;
+	    transform: rotate(90deg);
+	    letter-spacing: .3px;
+	    font-size: 16px;
+	    border-radius: 4px 4px 0 0;
+	    color: #fff;
+
+		@media screen and (max-width: 990px) {
+			position: absolute;
+			display: flex;
+		    top: 170px;
+		    left: -60px;
+		    z-index: 2;
+		}
+	}
+
 	@import 's1_sidebar';
 
 
@@ -50,10 +74,6 @@
 			@media screen and (max-width: 990px) {
 				justify-content: center;
 				gap: 20px;
-			}
-
-			@media screen and (max-width: 375px) {
-				padding: 0 10px;
 			}
 
 			.item {
