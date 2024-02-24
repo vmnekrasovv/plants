@@ -1,0 +1,95 @@
+.s2 {
+	margin-bottom: 140px;
+	padding-top: 100px;
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+
+	.element {
+		position: relative;
+		height: 250px;
+		display: flex;
+		background-color: #FBFBFB;
+
+		&::before {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			z-index: 2;
+			display: block;
+			content: '';
+			width: 65px;
+			height: 116px;
+			background: url('../images/dest/s2/ellipse.png') no-repeat;
+		}
+
+		img {
+			position: relative;
+			width: 292px;
+			height: 292px;
+			top: -52px;
+		}
+
+		&.e2 {
+			img {
+				top: -44px;
+			}
+		}
+
+		.content {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			align-items: flex-end;
+			padding: 37px 30px 0 0px;
+
+			.title {
+
+				max-width: 150px;
+				margin-bottom: 10px;
+
+				text-align: right;
+				font-size: 18px;
+				line-height: 24px;
+				color: $color_dark;
+				font-weight: 900;
+				text-transform: uppercase;
+			}
+
+			.text {
+				max-width: 292px;
+				margin-bottom: 20px;
+				
+				text-align: right;
+				font-size: 14px;
+				line-height: 24px;
+				color: $color_text;
+			}
+
+			.button {
+				position: relative;
+				padding: 10px 50px 10px 30px;
+				border-radius: 7px;
+				background-color: $color_green;
+				
+				font-size: 14px;
+				line-height: 20px;
+				font-weight: 500;
+				color: #fff;
+				text-decoration: none;
+
+				&::after {
+					position: absolute;
+					top: calc(50% - 8px);
+					right: 27px;
+					display: block;
+					content: '';
+					width: 18px;
+					height: 18px;
+					background: url('../images/dest/icons/arrow_button.svg') no-repeat;
+				}
+			}
+		}
+
+	} // element
+}
