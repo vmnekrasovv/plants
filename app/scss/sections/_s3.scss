@@ -1,0 +1,64 @@
+.s3 {
+
+	padding-bottom: 100px;
+
+	.elements {
+		display: flex;
+		justify-content: space-between;
+		gap: 44px;
+
+		.element {
+			
+			.content {
+				background-color: #fbfbfb;
+				padding: 10px 15px 20px 15px;
+			}
+
+			.meta {
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 16px;
+				color: $color_green;
+				margin-bottom: 7px;
+			}
+
+			h3 {
+				padding-right: 50px;
+				color: $color_dark;
+				font-weight: 700;
+				font-size: 20px;
+				line-height: 26px;
+				margin-bottom: 5px;
+			}
+
+			span {
+				display: inline-block;
+				color: $color_text;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 22px;
+				margin-bottom: 10px;
+			}
+
+			a {
+				position: relative;
+				color: $color_dark;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 16px;
+				text-decoration: none;
+
+				&::after {
+					position: absolute;
+				    top: calc(50% - 7px);
+				    right: -20px;
+				    display: block;
+				    content: "";
+				    width: 16px;
+				    height: 16px;
+				    background: url('../images/dest/icons/arrow_button_dark.svg') no-repeat;
+				}
+			}
+		}
+	}
+}

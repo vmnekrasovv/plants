@@ -49,6 +49,23 @@ body.lock {
 	}
 }
 
+.section-title {
+	color: $color_dark;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.section-desc {
+	color: $color_text;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
 @import 'slick.css';
 @import 'jquery-ui.min.css';
 
