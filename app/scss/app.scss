@@ -63,7 +63,20 @@ body.lock {
 	font-size: 14px;
 	line-height: 24px;
 	text-align: center;
-	margin-bottom: 35px;
+	margin-bottom: 50px;
+
+	@media screen and (max-width: 650px) {
+		width: 330px;
+    	margin: 0 auto 35px;
+	}
+
+	@media screen and (max-width: 576px) {
+		width: 284px;
+	}
+
+	@media screen and (max-width: 320px) {
+		width: 230px;
+	}
 }
 
 @import 'slick.css';
