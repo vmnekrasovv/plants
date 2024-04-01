@@ -1,0 +1,105 @@
+.footer {
+
+	background-color: #FBFBFB;
+
+	&-top {
+		display: flex;
+		gap: 30px;
+		padding: 25px;
+
+		.elements {
+			display: flex;
+			gap: 27px;
+
+			.element {
+
+				width: 238px;
+				padding-right: 35px;
+				border-right: 1px solid rgba(70, 163, 88, .1);
+
+				&:last-child {
+					border-right: none;
+				}
+
+				img {
+					display: block;
+					margin-bottom: 15px;
+				}
+
+				h3 {
+					font-weight: 700;
+					font-size: 17px;
+					line-height: 16px;
+					color: $color_dark;
+					margin-bottom: 10px;
+				}
+
+				p {
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 22px;
+					color: $color_text;
+				}
+
+			} // element
+		} // elements
+
+		.footer-form {
+
+			padding-top: 4px;
+
+			h3 {
+				font-weight: 700;
+				font-size: 18px;
+				line-height: 16px;
+				color: $color_dark;
+				margin-bottom: 20px;
+			}
+
+			form {
+				display: flex;
+				width: 100%;
+				margin-bottom: 20px;
+
+				.form-input {
+					width: 100%;
+					padding: 14px 15px 12px;
+					border-top-left-radius: 7px;
+					border-bottom-left-radius: 7px;
+					box-shadow: 0 0 18px -8px #ccc;
+
+					&::placeholder {
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 16px;
+						color: #bbb;
+						font-family: 'CeraPro';
+					}
+				}
+
+				.form-submit {
+					width: 85px;
+					padding: 12px 25px;
+					border-top-right-radius: 7px;
+					border-bottom-right-radius: 7px;
+					font-weight: 500;
+					font-size: 18px;
+					line-height: 16px;
+					color: #fff;
+					background-color: $color_green;
+					font-family: 'CeraPro';
+				}
+			} // form
+
+			p {
+				font-weight: 400;
+				font-size: 13px;
+				line-height: 22px;
+				color: $color_text;
+			}
+
+		} // footer-form
+
+	} // &-top
+
+}
