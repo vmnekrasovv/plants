@@ -176,4 +176,82 @@
 
 	} // &-top
 
+
+/////// center 
+
+
+	&-center {
+
+		display: flex;
+		align-items: center;
+		gap: 90px;
+		padding: 25px;
+		background-color: rgba(70,163,88,.1);
+		border-top: 1px solid rgba(70,163,88,.2);
+		border-bottom: 1px solid rgba(70,163,88,.2);
+
+		@media screen and (max-width: 1250px) {
+			flex-wrap: wrap;
+			gap: 20px;
+		}
+
+		.logo {
+			width: 150px;
+			position: relative;
+			z-index: 2;
+			height: 35px;
+			background: url('../images/dest/logo.svg') no-repeat;
+		}
+
+		.elements {
+			display: flex;
+			
+			@media screen and (max-width: 1250px) {
+				width: 100%;
+				gap: 70px;
+				padding-left: 5px;
+			}
+
+			@media screen and (max-width: 768px) {
+				flex-wrap: wrap;
+				gap: 20px;
+			}
+
+			.element {
+				align-self: center;
+				width: 260px;
+				padding-left: 35px;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 22px;
+				color: $color_dark;
+
+				background-size: 20px 20px;
+				background-repeat: no-repeat;
+				background-position: left center;
+
+				&.el-location {
+					background-image: url('../images/dest/icons/location.svg');
+				}
+
+				&.el-message {
+					background-image: url('../images/dest/icons/message.svg');
+				}
+
+				&.el-calling {
+					background-image: url('../images/dest/icons/calling.svg');
+				}
+
+				@media screen and (max-width: 1250px) {
+					width: auto;
+				}
+
+				@media screen and (max-width: 990px) {
+					width: 100%
+				}
+			}
+		}
+
+	} // &-center
+
 }

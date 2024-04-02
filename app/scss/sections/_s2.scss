@@ -15,6 +15,10 @@
 		justify-content: center;
 	}
 
+	@media screen and (max-width: 576px) {
+		margin-bottom: 70px;
+	}
+
 	.element {
 		display: flex;
 		flex-wrap: wrap;
