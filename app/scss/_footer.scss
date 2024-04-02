@@ -7,15 +7,45 @@
 		gap: 30px;
 		padding: 25px;
 
+		@media screen and (max-width: 1250px) {
+			flex-wrap: wrap;
+		}
+
 		.elements {
 			display: flex;
 			gap: 27px;
+
+			@media screen and (max-width: 1250px) {
+				margin-bottom: 30px;
+			}
+
+			@media screen and (max-width: 768px) {
+				flex-wrap: wrap;
+			}
 
 			.element {
 
 				width: 238px;
 				padding-right: 35px;
 				border-right: 1px solid rgba(70, 163, 88, .1);
+
+				@media screen and (max-width: 1250px) {
+					width: auto;
+				}
+
+				@media screen and (max-width: 768px) {
+					width: 70%;
+					margin: 20px auto 0;
+					padding-left: 10%;
+					padding-right: 10%;
+					padding-bottom: 40px;
+					border-right: none;
+					border-bottom: 1px solid rgba(70, 163, 88, .1);
+				}
+
+				@media screen and (max-width: 576px) {
+					width: 100%;
+				}
 
 				&:last-child {
 					border-right: none;
@@ -24,6 +54,10 @@
 				img {
 					display: block;
 					margin-bottom: 15px;
+
+					@media screen and (max-width: 1250px) {
+						margin: 0 auto 20px;
+					}
 				}
 
 				h3 {
@@ -32,6 +66,11 @@
 					line-height: 16px;
 					color: $color_dark;
 					margin-bottom: 10px;
+
+					@media screen and (max-width: 1250px) {
+						text-align: center;
+					}
+
 				}
 
 				p {
@@ -39,6 +78,10 @@
 					font-size: 14px;
 					line-height: 22px;
 					color: $color_text;
+
+					@media screen and (max-width: 1250px) {
+						text-align: center;
+					}
 				}
 
 			} // element
@@ -48,12 +91,35 @@
 
 			padding-top: 4px;
 
+			@media screen and (max-width: 768px) {
+				width: 80%;
+				margin: 0 auto;
+			}
+
+			@media screen and (max-width: 576px) {
+				width: 100%;
+			}
+
 			h3 {
 				font-weight: 700;
 				font-size: 18px;
 				line-height: 16px;
 				color: $color_dark;
 				margin-bottom: 20px;
+
+				@media screen and (max-width: 768px) {
+					text-align: center;
+				}
+
+				@media screen and (max-width: 576px) {
+					text-align: left;
+					font-size: 17px;
+				}
+
+				@media screen and (max-width: 376px) {
+					font-size: 16px;
+				}
+
 			}
 
 			form {
@@ -96,6 +162,14 @@
 				font-size: 13px;
 				line-height: 22px;
 				color: $color_text;
+
+				@media screen and (max-width: 768px) {
+					text-align: center;
+				}
+
+				@media screen and (max-width: 576px) {
+					text-align: left;
+				}
 			}
 
 		} // footer-form
